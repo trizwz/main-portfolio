@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Beatriz Alves</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!--Introduction-->
+    <section id="sobremim">
+        <header id="home">
+            <div class="wrapper-home">
+                <section class="banner">
+                    <div class="content">
+                        <div class="text">
+                            <div data-aos="fade-down-right" class="paragraphy">
+                                <p style="position: relative; top: -30px; right: 300px;">Olá &#x1F44B ! Meu nome é...
+                                </p>
+                            </div>
+                            <!--Nome OFC-->
+                            <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Beatriz Alves</h1>
+                            <div class="social-links" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <i class=" fa-brands fa-github"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    </section>
+    </header>
+    <!--Script animated particles-->
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#0053a5"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.2,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 0,
+                            "size_min": 0,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#aeafff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1.5735393620871414,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        )
+    </script>
+
+    <!--Background Video-->
+    <div class="bg">
+        <video autoplay muted loop>
+            <source src="assets/bg/background.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1200,
+            }
+        );
+    </script>
+</body>
+
+</html>
