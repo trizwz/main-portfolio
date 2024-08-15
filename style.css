@@ -1,5 +1,12 @@
 :root {
     --maintext-color: #d9d5c8;
+    --text-color: #ffffffe8;
+    --color-text: #e4e4e4;
+    --p-color: #6e6e6e;
+    --nav-height: 7.2rem;
+    --primary-color: #006DDD;
+    --secondary-color: #004388;
+    --tertinary-color: #001326;
 }
 
 * {
@@ -40,7 +47,7 @@ body {
 
 .banner {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -72,45 +79,79 @@ section {
     color: #d8d8d8;
     font-family: sans-serif;
     letter-spacing: -2px;
+    position: relative;
+    right: 246px;
 }
 
 #home .content .text h1 {
-    line-height: 1px;
-    font-family: Code Pro LC;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 8rem;
+    position: relative;
+    font-family: Code Pro LC, sans-serif;
+    font-size: 7rem;
     font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 0.5px white;
-    text-align: center;
+    -webkit-text-stroke: 1px #ffffffe8;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    bottom: 40px;
 }
-
-.social-links{
-    animation: float 3s linear infinite;
-}
-
 
 .social-links div {
-    margin-top: 3rem;
     display: flex;
     align-items: center;
     gap: 3rem;
-    position: sticky;
-    top: 100px;
+    /* top: 100px;*/
     font-size: 20px;
 }
 
 .social-links i {
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
     font-weight: 100;
-    top: 60px;
     color: white;
     display: inline;
     letter-spacing: 20px;
-    left: 323px;
+    left: 290px;
+    bottom: 50px;
     filter: drop-shadow(1px 2px 10px #ffffff);
+}
+
+a#scrollBtn {
+    position: absolute;
+    height: 4em;
+    width: 2.20em;
+    border: 2px solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10rem;
+    border-radius: 3rem;
+}
+
+a#scrollBtn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: .7rem;
+    width: .7rem;
+    background-color: white;
+    border-radius: 50%;
+    animation: moveDown 2s infinite;
+}
+
+@keyframes moveDown{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(3.3em);
+        opacity: 0;
+    }
+}
+
+.social-links {
+    animation: float 3s linear infinite;
 }
 
 .social-links i:hover {
@@ -120,16 +161,48 @@ section {
 }
 
 @keyframes float {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(15px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
+
+/*Projects*/
+#projects {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 3px );
+    position: relative;
+    text-align: center;
+}
+
+#projects header h2 {
+    position: relative;
+    color: var(--color-text);
+    font-size: 2.7rem;
+    justify-content: center;
+    font-family: Code Pro LC; 
+} 
+
+#projects header p {
+    font-family: Coolvetica; 
+    font-size: 1.6rem;
+    color: var(--p-color);
+    font-weight: 200;
+  }
+
+  #projects header {
+    margin-bottom: 8rem;
+  }
+
 
 /*Background*/
 .bg {
